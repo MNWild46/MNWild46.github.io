@@ -126,6 +126,7 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px 40px;
+  background:#003893;
   color: #ffffff;
   transition: 0.3s ease all;
 }

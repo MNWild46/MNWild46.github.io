@@ -22,6 +22,11 @@ class NightlifeList extends Component {
           this.props.setMarkers(venues);
           this.setState({ nightlife: venues });
         });
+      })
+        .catch(error => {
+          console.log('FourSquare API was unable to load: ' +
+              error
+          );
       }
     );
   }
@@ -80,7 +85,7 @@ class NightlifeList extends Component {
         {filterednightlife.map((p, index) =>
           <li
             tabIndex={index + 2}
-            role='option'
+            role='button'
             key={index}
             className='place'
             onClick={() => {this.props.onPlaceClick(index)}}

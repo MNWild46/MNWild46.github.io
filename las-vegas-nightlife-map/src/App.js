@@ -74,7 +74,6 @@ class App extends Component {
 
   showError = () => {
     const block = document.querySelector('.error');
-    block.style.opacity = 1;
     setTimeout(() => {
       block.style.opacity = 0;
     }, 3000);
@@ -87,12 +86,7 @@ class App extends Component {
     const placesInfo = this.state.places.map(v => {
       return { lat: v.location.lat, lng: v.location.lng, clicked: v.clicked }
     });
-    
-
-
-
-
-
+  
     return (
       <div className='app-container'>
         <NightlifeList
@@ -111,7 +105,7 @@ class App extends Component {
           hideLocationFeature={this.handleHidingLocationFeature} />)}
         <div
           style={{ opacity: 0 }}
-          className='error'></div>
+          className='error'>Error receiving data from FourSquare</div>
       </div>
     );
   }
