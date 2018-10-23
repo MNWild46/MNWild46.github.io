@@ -18,11 +18,19 @@ On top of these, I utilized [react-google-maps](https://github.com/tomchentw/rea
 
 My intention was to show nightlife locations located arount T-Mobile Arena in Las Vegas. This could be useful if someone went to a concert or Golden Kinghts hockey game there and was looking for clubs or bars that they could head over to after the main event.
 
-## How to Run the App
+## How to Run the App In Dev Mode:
 
 1) Clone the app from github
 2) Run ```npm install```
 3) Install dependencies (See 'Resources Used' section)
 4) Run ```npm start``` to launch the app
 
-I hope you enjoy this trip to beautiful Las Vegas :]
+## How to Run the App In Production Mode (Needed for service worker usage through React):
+
+1) 1) Clone the app from github
+2) Run ```npm install```
+3) Install dependencies (See 'Resources Used' section)
+4) Run ```npm run build```
+5) Run ```serve -s build```
+6) Input localhost:5000 into your browser window to launch the app
+

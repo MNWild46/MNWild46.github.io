@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
+
+
+
+
+
+
+
 // Set value to true on map load callback
 
 function onMapLoaded() {

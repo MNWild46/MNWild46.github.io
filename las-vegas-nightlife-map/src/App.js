@@ -80,10 +80,18 @@ class App extends Component {
     }, 3000);
   }
 
+
+
+  
   render() {
     const placesInfo = this.state.places.map(v => {
       return { lat: v.location.lat, lng: v.location.lng, clicked: v.clicked }
     });
+    
+
+
+
+
 
     return (
       <div className='app-container'>
@@ -103,7 +111,7 @@ class App extends Component {
           hideLocationFeature={this.handleHidingLocationFeature} />)}
         <div
           style={{ opacity: 0 }}
-          className='error'>Something went wrong</div>
+          className='error'></div>
       </div>
     );
   }
