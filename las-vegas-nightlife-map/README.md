@@ -27,7 +27,7 @@ My intention was to show nightlife locations located arount T-Mobile Arena in La
 
 ## How to Run the App In Production Mode (Needed for service worker usage through React):
 
-1) 1) Clone the app from github
+1) Clone the app from github
 2) Run ```npm install```
 3) Install dependencies (See 'Resources Used' section)
 4) Run ```npm run build```
